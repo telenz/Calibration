@@ -78,6 +78,7 @@ process.dump = cms.EDAnalyzer("EventContentAnalyzer")
 
 process.pDump = cms.Path(process.dump )
 process.pData = cms.Path(process.filterSequence *
+                         process.calibTreeMakerGenJetsNoNuNoMuNoNu *
                          process.calibjets *
                          process.produceAllCaloMETCorrections *
                          process.produceAllPFMETCorrections *
