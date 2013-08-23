@@ -86,6 +86,7 @@ process.pDump = cms.Path(process.dump )
 process.pData = cms.Path(process.goodPhotons *
                          process.photonFilter *
                          process.filterSequence *
+                         process.calibTreeMakerGenJetsNoNuNoMuNoNu *
                          process.calibjets *
                          process.produceAllCaloMETCorrections *
                          process.produceAllPFMETCorrections *
